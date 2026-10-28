@@ -8,8 +8,8 @@ no frameworks, no external CDNs. The Orbitron font is self-hosted.
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Home page: what the app does, APK download, install steps, features, how Google Drive is used |
-| `privacy.html` | Privacy policy (incl. Google API Services User Data Policy / Limited Use statement) |
+| `index.html` | Home page: what the app does, APK download, install steps, features |
+| `privacy.html` | Privacy policy |
 | `terms.html` | Terms of service (incl. format/wipe data-loss disclaimer) |
 | `404.html` | Not-found page served by GitHub Pages |
 
@@ -43,8 +43,3 @@ GitHub Release instead and point the button at the release asset.
 require an absolute URL: once the final address is known, change it to
 `https://<your-site>/assets/og-image.jpg` in each page.
 
-## Google OAuth verification
-
-- Home page URL: `index.html` (describes the app, not just a sign-in page)
-- Privacy policy URL: `privacy.html`
-- Terms of service URL: `terms.html`
