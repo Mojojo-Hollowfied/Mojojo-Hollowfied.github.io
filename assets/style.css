@@ -200,3 +200,17 @@ section { padding: 26px 0; }
   .doc td:first-child { font-weight: 700; color: var(--ink); font-size: 1rem; }
   .doc td:first-child::before { content: none; }
 }
+
+/* Screenshots gallery: a sideways swipe on phones, a full row on wide screens */
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 4px 4px 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin;
+}
+.shot { flex: 0 0 auto; width: min(62vw, 240px); margin: 0; scroll-snap-align: center; text-align: center; }
+.shot img {
+  display: block; width: 100%; height: auto; border-radius: 22px;
+  border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 24px rgba(41,230,255,.12);
+}
+.shot figcaption { color: var(--muted); font-size: .88rem; margin-top: 8px; line-height: 1.35; }
+.shots:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; border-radius: 12px; }
+@media (min-width: 900px) { .shots { justify-content: safe center; } .shot { width: 160px; } }
